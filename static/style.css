@@ -68,6 +68,7 @@ ul.hidden_nav li{
 	background-color:#000000FF;
 	padding: 5pt 5pt 5pt 5pt;
 	margin-left: -2.5em;
+	text-align: left;
 }
 
 ul.hidden_nav li a{
