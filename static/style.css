@@ -120,3 +120,10 @@ div.footer ul li a{
 	font-size: 18px;
 	color: #F0E0C4FF;
 }
+
+/* Responsive design */
+
+@media screen and (max-width: 500px) {
+	ul.buch>li{
+	width:95%;
+}
