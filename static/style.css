@@ -30,7 +30,7 @@ div.navigation{
 	margin-right: 1em;
 }
 
-div.navigation ul{
+ul.nav{
 	list-style-type: none;
     padding-left: 4em;
     padding-top: 0em;
@@ -38,7 +38,7 @@ div.navigation ul{
 	display:inline-block;
 }
 
-div.navigation ul li{
+ul.nav li{
 	margin: 0px 10px;
 	float:left;
 	text-align:center;
@@ -46,10 +46,32 @@ div.navigation ul li{
 	padding-bottom:5pt;
 }
 
-div.navigation ul li a{
+ul.nav li a{
 	text-decoration: none;
 	font-size: 26px;
 	color:#F0E0C4FF;
+}
+
+ul.hidden_nav{
+	display:none;
+	list-style-type: none;
+	z-index: 1;
+	position: absolute;
+}
+
+ul.nav>li:hover ul.hidden_nav{
+	display: block;
+}
+ul.hidden_nav li{
+	display: block;
+	float: none;
+	background-color:#000000FF;
+	padding: 5pt 5pt 5pt 5pt;
+	margin-left: -2.5em;
+}
+
+ul.hidden_nav li a{
+	font-size:18px;
 }
 
 div.main{
@@ -68,11 +90,15 @@ ul.buch{
 
 ul.buch>li{
 	background-color: #333333FF;
-	color:#F0E0C4FF;
-	font-size: 24px;
 	padding: 2em 0em 2em 1em;
 	margin-top:1pt;
 	width: 50%;
+}
+
+ul.buch li a{
+	text-decoration:none;
+	color:#F0E0C4FF;
+	font-size: 24px;
 }
 
 ul.hidden{
@@ -125,5 +151,6 @@ div.footer ul li a{
 
 @media screen and (max-width: 500px) {
 	ul.buch>li{
-	width:95%;
+		width:95%;
+	}
 }
