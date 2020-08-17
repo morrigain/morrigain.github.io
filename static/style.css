@@ -43,6 +43,7 @@ div.navigation ul li{
 	float:left;
 	text-align:center;
 	height: 25px;
+	padding-bottom:5pt;
 }
 
 div.navigation ul li a{
