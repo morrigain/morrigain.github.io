@@ -1,0 +1,121 @@
+body{
+	font-family: 'BloggerSansLight';
+	background-color: #333333FF;
+}
+
+div.header{
+
+}
+
+div.logo{
+	position: absolute;
+	left: 1em;
+	top: 0px;
+	width: 200px;
+	height: 200px;
+	z-index: 2;
+}
+
+div.flags{
+	text-align: right;
+	float: top right;
+	
+}
+
+div.navigation{
+	background-color: #000000FF;
+	border-top: 5px solid #BE0000FF;
+	margin-left: 150px;
+	margin-top: 50px;
+	margin-right: 1em;
+}
+
+div.navigation ul{
+	list-style-type: none;
+    padding-left: 4em;
+    padding-top: 0em;
+    overflow: hidden;
+	display:inline-block;
+}
+
+div.navigation ul li{
+	margin: 0px 10px;
+	float:left;
+	text-align:center;
+	height: 25px;
+}
+
+div.navigation ul li a{
+	text-decoration: none;
+	font-size: 26px;
+	color:#F0E0C4FF;
+}
+
+div.main{
+	/*background-image: url("../static/CrowLoogthrough.png");
+	background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;*/
+	background-color: #F0E0C4FF;
+	padding: 4em 1em 1em 1em;
+	margin: 0em 1em 0em 2em;
+}
+
+ul.buch{
+	list-style-type: none;
+}
+
+ul.buch>li{
+	background-color: #333333FF;
+	color:#F0E0C4FF;
+	font-size: 24px;
+	padding: 2em 0em 2em 1em;
+	margin-top:1pt;
+	width: 50%;
+}
+
+ul.hidden{
+	display:none;
+}
+
+ul.buch>li:hover{
+	width: 95%;
+}
+
+ul.buch>li:hover ul.hidden{
+	display: block;
+}
+
+ul.hidden>li{
+	background-color:#F0E0C4FF;
+	color:#000000FF;
+	font-size:18px;
+	padding: 1em 1em 1em 1em;
+	margin-right: 2pt;
+	margin-top:1pt;
+}
+
+div.footer{
+	border-top: 5px solid #BE0000FF;
+	margin: 0em 1em 0em 2em;
+}
+
+div.footer ul{
+	list-style-type: none;
+    padding-left: 0em;
+    padding-top: 0em;
+    overflow: hidden;
+}
+
+div.footer ul li{
+	margin: 0px 10px;
+	float:left;
+	text-align:center;
+	height: 45px;
+}
+
+div.footer ul li a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #F0E0C4FF;
+}
