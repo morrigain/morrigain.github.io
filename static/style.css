@@ -154,4 +154,8 @@ div.footer ul li a{
 	ul.buch>li{
 		width:95%;
 	}
+	div.navigation{
+		font-size: 75%;
+		margin-top: 10px;
+	}
 }
