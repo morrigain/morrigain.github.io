@@ -197,7 +197,7 @@ div.flex{
 
 /* Responsive design */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 	ul.buch{
 		padding-left:10px;
 	}
@@ -208,14 +208,10 @@ div.flex{
 		font-size: 60%;
 		/* margin-top: 150px; */
 	}
-	/* div.logo{
-		position: absolute;
-		left:1em;
-		top: 0px;
+	div.logo{
 		width: 100px;
 		height: 100px;
-		z-index: 2;
-	}*/
+	}
 	div.header{
 		height:150px;
 	}
