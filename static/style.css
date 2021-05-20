@@ -215,13 +215,11 @@ div.flex{
 		width: 100px;
 		height: 100px;
 		z-index: 2;
-	}
+	}*/
 	div.header{
-		background-image:none;
-		background-color:#333333FF;
 		height:150px;
 	}
-	div.sidebar{
+	/*div.sidebar{
 		width: unset !important;
 		position: unset !important;
 		top: unset !important;
