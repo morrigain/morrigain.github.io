@@ -97,14 +97,11 @@ div.main{
 	background-color: #F0E0C4FF;
 	padding: 4em 1em 1em 1em;
 	margin: 0em 1em 0em 2em;
-	height:100%;
-	flex:1 0 50%
+	height:1100px;
 }
 
 div.subflex{
-	display:flex;
-	flex-direction: column;
-	flex-wrap:wrap;
+
 }
 
 div.mainpanel{
@@ -200,7 +197,7 @@ div.flex{
 
 /* Responsive design */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 	ul.buch{
 		padding-left:10px;
 	}
@@ -249,4 +246,4 @@ div.flex{
 	 display: flex;
 	 flex-direction: column;
 	}
-}
+} */
