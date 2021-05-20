@@ -197,7 +197,7 @@ div.flex{
 
 /* Responsive design */
 
-/* @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	ul.buch{
 		padding-left:10px;
 	}
@@ -206,9 +206,9 @@ div.flex{
 	}
 	div.navigation{
 		font-size: 60%;
-		margin-top: 150px;
+		/* margin-top: 150px; */
 	}
-	div.logo{
+	/* div.logo{
 		position: absolute;
 		left:1em;
 		top: 0px;
@@ -245,5 +245,5 @@ div.flex{
 	div.flex{
 	 display: flex;
 	 flex-direction: column;
-	}
-} */
+	} */
+}
