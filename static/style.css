@@ -4,35 +4,46 @@ body{
 }
 
 div.header{
-
+	background-image: url("Ramen_Website2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: rgba(59,59,59,135);
+	margin-left: 2em;
+	height: 200px;
+	left:0;
 }
 
 div.logo{
 	position: absolute;
-	left: 1em;
+	right: 1em;
 	top: 0px;
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	z-index: 2;
 }
 
+div.ul{
+	float:left;
+}
+
 div.flags{
-	text-align: right;
-	float: top right;
-	
+	float:right;
+	position: absolute;
+	right:0;
+	margin-right:200px;
 }
 
 div.navigation{
 	background-color: #000000FF;
 	border-top: 5px solid #BE0000FF;
-	margin-left: 150px;
-	margin-top: 50px;
+	margin-left: 2em;
+	/* margin-top: 50px; */
 	margin-right: 1em;
 }
 
 ul.nav{
 	list-style-type: none;
-    padding-left: 4em;
+    padding-left: 5pt;
     padding-top: 0em;
     overflow: hidden;
 	display:inline-block;
@@ -75,14 +86,46 @@ ul.hidden_nav li a{
 	font-size:18px;
 }
 
+div.flex{
+	height:100%;
+}
 div.main{
 	/*background-image: url("../static/CrowLoogthrough.png");
 	background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     position: relative;*/
 	background-color: #F0E0C4FF;
 	padding: 4em 1em 1em 1em;
 	margin: 0em 1em 0em 2em;
+	height:100%;
+	flex:1 0 50%
+}
+
+div.subflex{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+}
+
+div.mainpanel{
+	margin-right: 175px;
+}
+
+div.sidebar{
+	width: 175px;
+	position: absolute;
+	/* z-index: 1; */
+	top:0;
+	right:0;
+	margin-top: 300px;
+	margin-right: 1em;
+	margin-left: 1em;
+	height:100%;
+}
+
+img.sidebar{
+	width:100%;
+	margin-bottom: 1em;
 }
 
 ul.buch{
@@ -125,7 +168,10 @@ ul.hidden>li{
 
 div.footer{
 	border-top: 5px solid #BE0000FF;
-	margin: 0em 1em 0em 2em;
+	margin-right: 1em;
+	margin-left:2em;
+	margin-top: auto;
+	bottom:0;
 }
 
 div.footer ul{
@@ -148,14 +194,59 @@ div.footer ul li a{
 	color: #F0E0C4FF;
 }
 
+div.flex{
+	min-height:100%
+}
+
 /* Responsive design */
 
 @media screen and (max-width: 500px) {
+	ul.buch{
+		padding-left:10px;
+	}
 	ul.buch>li{
 		width:95%;
 	}
 	div.navigation{
-		font-size: 75%;
-		margin-top: 10px;
+		font-size: 60%;
+		margin-top: 150px;
+	}
+	div.logo{
+		position: absolute;
+		left:1em;
+		top: 0px;
+		width: 100px;
+		height: 100px;
+		z-index: 2;
+	}
+	div.header{
+		background-image:none;
+		background-color:#333333FF;
+		height:150px;
+	}
+	div.sidebar{
+		width: unset !important;
+		position: unset !important;
+		top: unset !important;
+		right: unset !important;
+		z-index: unset !important;
+		background-color:#F0E0C4FF;
+		padding: 1em 2em 1em 1em;
+		margin: 0em 1em 0em 2em;
+	}
+	div.main{
+		padding: 0em 1em 1em 1em;
+	}
+	img.sidebar{
+		height:150px;
+		width: unset !important;
+		margin-left: 1em;
+	}
+	div.mainpanel{
+		margin-right: 0px;
+	}
+	div.flex{
+	 display: flex;
+	 flex-direction: column;
 	}
 }
