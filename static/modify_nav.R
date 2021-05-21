@@ -14,7 +14,7 @@ bottom <- gsub("index.html","../index.html",bottom)
 d <- dir("~/Git/morrigain.github.io/de",full.names=TRUE)
 for(i in seq_along(d)){
   r <- readLines(d[i])
-  g <- grep('<div class="main">',r)
+  g <- grep('<div class="main"',r)
   G <- grep('</div>',r)
   h <- head(G[G>g],1)
   middle <- r[g:h]
