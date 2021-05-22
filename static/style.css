@@ -35,7 +35,7 @@ div.flags{
 
 div.navigation{
 	background-color: #000000FF;
-	border-top: 5px solid #BE0000FF;
+	/* border-top: 5px solid #BE0000FF; */
 	margin-left: 2em;
 	/* margin-top: 50px; */
 	margin-right: 1em;
@@ -128,16 +128,39 @@ ul.buch{
 }
 
 ul.buch>li{
-	background-color: #333333FF;
+	background-color: rgba(59,59,59,135);
 	padding: 2em 0em 2em 1em;
 	margin-top:1pt;
 	width: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right 0;
 }
 
 ul.buch li a{
 	text-decoration:none;
 	color:#F0E0C4FF;
 	font-size: 24px;
+}
+
+li.klassiker{
+	background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");
+}
+
+li.wissenschaft{
+	background-image: url("tabs/BalkenWebsiteScience.png");
+}
+
+li.krimi{
+	background-image: url("tabs/BalkenWebsiteMystery.png");
+}
+
+li.kinder{
+	background-image: url("tabs/BalkenWebsiteKids.png");
+}
+
+li.bio{
+	background-image: url("tabs/BalkenWebsiteBio.png");
 }
 
 ul.hidden{
@@ -162,7 +185,8 @@ ul.hidden>li{
 }
 
 div.footer{
-	border-top: 5px solid #BE0000FF;
+	/* border-top: 5px solid #BE0000FF; */
+	border-top: 5px solid #000000FF;
 	margin-right: 1em;
 	margin-left:2em;
 	margin-top: auto;
