@@ -38,7 +38,7 @@ div.navigation{
 	/* border-top: 5px solid #BE0000FF; */
 	margin-left: 2em;
 	/* margin-top: 50px; */
-	margin-right: 1em;
+	margin-right: -10em;
 }
 
 ul.nav{
@@ -239,6 +239,11 @@ div.flex{
 	}
 	div.sidebar{
 		margin-top: 200px;
+	}
+
+	ul.buch>li{
+		padding: 1em 0em 1em 1em;
+		background-size:cover;
 	}
 	/*div.sidebar{
 		width: unset !important;
