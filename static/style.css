@@ -95,7 +95,7 @@ div.main{
 	background-color: #F0E0C4FF;
 	padding: 4em 1em 1em 1em;
 	margin: 0em 1em 0em 2em;
-	min-height:1100px;
+	min-height:1500px;
 }
 
 div.subflex{
@@ -103,11 +103,11 @@ div.subflex{
 }
 
 div.mainpanel{
-	margin-right: 175px;
+	margin-right: 250px;
 }
 
 div.sidebar{
-	width: 175px;
+	width: 250px;
 	position: absolute;
 	/* z-index: 1; */
 	top:0;
@@ -129,8 +129,8 @@ ul.buch{
 
 ul.buch>li{
 	background-color: rgba(59,59,59,135);
-	padding: 2em 0em 2em 1em;
-	margin-top:1pt;
+	padding: 3em 0em 3em 1em;
+	margin-top:5pt;
 	width: 50%;
 	background-size: contain;
 	background-repeat: no-repeat;
