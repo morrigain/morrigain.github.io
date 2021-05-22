@@ -169,6 +169,7 @@ ul.hidden{
 
 ul.buch>li:hover{
 	width: 95%;
+	background-image: none;
 }
 
 ul.buch>li:hover ul.hidden{
