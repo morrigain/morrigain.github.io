@@ -219,6 +219,7 @@ div.flags{
 	div.navigation{
 		padding-right:200px;
 		margin-right: 1em;
+		margin-left:1em;
 	}
 	div.logo{
 		width: 150px;
@@ -228,6 +229,7 @@ div.flags{
 	div.header{
 		height:50px;
 		margin-right: 100px;
+		margin-left:1em;
 	}
 	div.sidebar{
 		margin-top: 150px;
@@ -239,9 +241,13 @@ div.flags{
 	div.main{
 		min-height:600px;
 		font-size: 12px;
+		margin-left:1em;
 	}
 	div.flags{
 		margin-right:130px;
+	}
+	div.footer{
+		margin-left:1em;
 	}
 	div.footer ul li{
 		float:unset;
