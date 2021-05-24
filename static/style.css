@@ -1,5 +1,4 @@
 body{
-	/*font-family: 'BloggerSansLight';*/
 	background-color: #333333FF;
 }
 
@@ -14,6 +13,12 @@ div.header{
 	left:0;
 }
 
+div.klassiker{background-image: url("tabs/BalkenWebsiteIllustrierteKlassikerFlip.png") !important;}
+div.wissenschaft{background-image: url("tabs/BalkenWebsiteScienceFlip.png") !important;}
+div.krimi{background-image: url("tabs/BalkenWebsiteMysteryFlip.png") !important;}
+div.kinder{background-image: url("tabs/BalkenWebsiteKidsFlip.png") !important;}
+div.bio{background-image: url("tabs/BalkenWebsiteBioFlip.png") !important;}
+
 div.logo{
 	position: absolute;
 	right: 2em;
@@ -23,30 +28,43 @@ div.logo{
 	z-index: 2;
 }
 
-div.ul{
-	float:left;
-}
-
-div.flags{
-	float:right;
-	position: absolute;
-	right:0;
-	margin-right:275px;
-}
-
 div.navigation{
 	background-color: #000000FF;
 	/* border-top: 5px solid #BE0000FF; */
 	margin-left: 2em;
-	/* margin-top: 50px; */
 	margin-right: -10em;
+}
+
+div.main{
+	background: url("WebsiteBackgroundforBeige.png") no-repeat bottom right;
+	background-size: contain;
+	background-color: #F0E0C4FF;
+	padding: 4em 1em 1em 1em;
+	margin: 0em 1em 0em 2em;
+	min-height:1500px;
+}
+
+div.ul{float:left;}
+
+div.flex{height:100%;}
+div.mainpanel{margin-right: 250px;}
+
+div.sidebar{
+	width: 250px;
+	position: absolute;
+	top:0;
+	right:0;
+	margin-top: 300px;
+	margin-right: 1em;
+	margin-left: 1em;
+	height:100%;
 }
 
 ul.nav{
 	list-style-type: none;
-    padding-left: 5pt;
-    padding-top: 0em;
-    overflow: hidden;
+  padding-left: 5pt;
+  padding-top: 0em;
+  overflow: hidden;
 	display:inline-block;
 }
 
@@ -74,6 +92,7 @@ ul.hidden_nav{
 ul.nav>li:hover ul.hidden_nav{
 	display: block;
 }
+
 ul.hidden_nav li{
 	display: block;
 	float: none;
@@ -84,43 +103,11 @@ ul.hidden_nav li{
 }
 
 ul.hidden_nav li a{
-	font-size:18px;
-}
-
-div.flex{
-	height:100%;
-}
-div.main{
-	background: url("WebsiteBackgroundforBeige.png") no-repeat bottom right;
-	background-size: contain;
-	background-color: #F0E0C4FF;
-	padding: 4em 1em 1em 1em;
-	margin: 0em 1em 0em 2em;
-	min-height:1500px;
-}
-
-div.subflex{
-
-}
-
-div.mainpanel{
-	margin-right: 250px;
-}
-
-div.sidebar{
-	width: 250px;
-	position: absolute;
-	/* z-index: 1; */
-	top:0;
-	right:0;
-	margin-top: 300px;
-	margin-right: 1em;
-	margin-left: 1em;
-	height:100%;
+	font-size: 18px;
 }
 
 img.sidebar{
-	width:100%;
+	width: 100%;
 	margin-bottom: 1em;
 }
 
@@ -144,45 +131,11 @@ ul.buch li a{
 	font-size: 24px;
 }
 
-li.klassiker{
-	background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");
-}
-
-li.wissenschaft{
-	background-image: url("tabs/BalkenWebsiteScience.png");
-}
-
-li.krimi{
-	background-image: url("tabs/BalkenWebsiteMystery.png");
-}
-
-li.kinder{
-	background-image: url("tabs/BalkenWebsiteKids.png");
-}
-
-li.bio{
-	background-image: url("tabs/BalkenWebsiteBio.png");
-}
-
-div.klassiker{
-	background-image: url("tabs/BalkenWebsiteIllustrierteKlassikerFlip.png") !important;
-}
-
-div.wissenschaft{
-	background-image: url("tabs/BalkenWebsiteScienceFlip.png") !important;
-}
-
-div.krimi{
-	background-image: url("tabs/BalkenWebsiteMysteryFlip.png") !important;
-}
-
-div.kinder{
-	background-image: url("tabs/BalkenWebsiteKidsFlip.png") !important;
-}
-
-div.bio{
-	background-image: url("tabs/BalkenWebsiteBioFlip.png") !important;
-}
+li.klassiker{background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");}
+li.wissenschaft{background-image: url("tabs/BalkenWebsiteScience.png");}
+li.krimi{background-image: url("tabs/BalkenWebsiteMystery.png");}
+li.kinder{background-image: url("tabs/BalkenWebsiteKids.png");}
+li.bio{background-image: url("tabs/BalkenWebsiteBio.png");}
 
 ul.hidden{
 	display:none;
@@ -205,6 +158,8 @@ ul.hidden>li{
 	margin-right: 2pt;
 	margin-top:1pt;
 }
+
+/* Footer */
 
 div.footer{
 	/* border-top: 5px solid #BE0000FF; */
@@ -235,70 +190,46 @@ div.footer ul li a{
 	color: #F0E0C4FF;
 }
 
-div.flex{
-	min-height:100%
+div.flags{
+	float:right;
+	position: absolute;
+	right:0;
+	margin-right:275px;
 }
 
 /* Responsive design */
 
 @media screen and (max-width: 800px) {
-	ul.buch{
-		padding-left:10px;
-	}
-	ul.buch>li{
-		width:95%;
-		height:115px;
-	}
 	div.navigation{
 		padding-right:200px;
 		margin-right: 1em;
 	}
-	ul.nav li a{
-		font-size: 16px;
-		/* margin-top: 150px; */
-	}
 	div.logo{
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 	}
 	div.header{
 		height:100px;
 		margin-right: 100px;
 	}
 	div.sidebar{
-		margin-top: 200px;
-		width:175px;
+		margin-top: 150px;
+		width:100px;
 	}
 	div.mainpanel{
-		margin-right: 175px;
+		margin-right: 100px;
+	}
+	ul.nav li a{
+		font-size: 16px;
+		/* margin-top: 150px; */
+	}
+	ul.buch{
+		padding-left:10px;
 	}
 	ul.buch>li{
+		width:95%;
+		height:115px;
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
 	}
-	/*div.sidebar{
-		width: unset !important;
-		position: unset !important;
-		top: unset !important;
-		right: unset !important;
-		z-index: unset !important;
-		background-color:#F0E0C4FF;
-		padding: 1em 2em 1em 1em;
-		margin: 0em 1em 0em 2em;
-	}
-	div.main{
-		padding: 0em 1em 1em 1em;
-	}
-	img.sidebar{
-		height:150px;
-		width: unset !important;
-		margin-left: 1em;
-	}
-	div.mainpanel{
-		margin-right: 0px;
-	}
-	div.flex{
-	 display: flex;
-	 flex-direction: column;
-	} */
 }
