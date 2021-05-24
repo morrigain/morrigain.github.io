@@ -247,9 +247,11 @@ div.flex{
 	}
 	ul.buch>li{
 		width:95%;
+		height:115px;
 	}
 	div.navigation{
 		padding-right:200px;
+		margin-right: 1em;
 	}
 	ul.nav li a{
 		font-size: 16px;
