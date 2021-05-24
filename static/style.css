@@ -238,6 +238,7 @@ div.flags{
 	}
 	div.main{
 		min-height:600px;
+		font-size: 12px;
 	}
 	div.flags{
 		margin-right:130px;
