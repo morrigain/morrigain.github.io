@@ -236,8 +236,11 @@ div.flags{
 	div.mainpanel{
 		margin-right: 100px;
 	}
+	div.main{
+		min-height:600px;
+	}
 	div.flags{
-		margin-right:100px;
+		margin-right:130px;
 	}
 	div.footer ul li{
 		float:unset;
