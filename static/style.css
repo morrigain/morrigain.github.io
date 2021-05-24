@@ -132,10 +132,16 @@ ul.buch li a{
 }
 
 li.klassiker{background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");}
-li.wissenschaft{background-image: url("tabs/BalkenWebsiteScience.png");}
+li.wissenschaft{
+	background-image: url("tabs/BalkenWebsiteScience.png");
+	padding: 2.1em 0em 2.1em 1em !important;
+}
 li.krimi{background-image: url("tabs/BalkenWebsiteMystery.png");}
 li.kinder{background-image: url("tabs/BalkenWebsiteKids.png");}
-li.bio{background-image: url("tabs/BalkenWebsiteBio.png");}
+li.bio{
+	background-image: url("tabs/BalkenWebsiteBio.png");
+	padding: 2.1em 0em 2.1em 1em !important;
+}
 
 ul.hidden{
 	display:none;
@@ -219,8 +225,12 @@ div.flags{
 	div.mainpanel{
 		margin-right: 100px;
 	}
+	ul.nav li{
+		float:unset;
+		text-align:unset;
+	}
 	ul.nav li a{
-		font-size: 16px;
+		font-size: 18px;
 		/* margin-top: 150px; */
 	}
 	ul.buch{
@@ -231,5 +241,11 @@ div.flags{
 		height:115px;
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
+	}
+	ul.buch>li a{
+		color: black;
+	}
+	ul.buch>li:hover a{
+		color:#F0E0C4FF;
 	}
 }
