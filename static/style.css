@@ -131,7 +131,10 @@ ul.buch li a{
 	font-size: 24px;
 }
 
-li.klassiker{background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");}
+li.klassiker{
+	background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");
+	padding: 2.1em 0em 2.1em 1em !important;
+}
 li.wissenschaft{
 	background-image: url("tabs/BalkenWebsiteScience.png");
 	padding: 2.1em 0em 2.1em 1em !important;
