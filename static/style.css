@@ -238,15 +238,18 @@ div.flags{
 	}
 	ul.buch>li{
 		width:95%;
-		height:115px;
+		/* height:115px; */
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
 	}
-	ul.buch>li a{
-		color: black;
+	li.wissenschaft{
+		padding: 0.5em 0em 0.5em 1em !important;
 	}
-	ul.buch>li:hover a{
-		color:#F0E0C4FF;
+	li.bio{
+		padding: 0.5em 0em 0.5em 1em !important;
+	}
+	ul.buch>li a{
+		font-size: 14px;
 	}
 	ul.buch>li:hover{
 		height:unset;
