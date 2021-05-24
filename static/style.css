@@ -241,23 +241,11 @@ div.flags{
 	}
 	ul.buch>li{
 		width:95%;
-		/* height:115px; */
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
 	}
-	li.klassiker{
-		padding: 0.5em 0em 0.5em 1em !important;
-	}
-	li.wissenschaft{
-		padding: 0.5em 0em 0.5em 1em !important;
-	}
-	li.bio{
-		padding: 0.5em 0em 0.5em 1em !important;
-	}
-	ul.buch>li a{
-		font-size: 14px;
-	}
-	ul.buch>li:hover{
-		height:unset;
-	}
+	li.klassiker{padding: 0.5em 0em 0.5em 1em !important;}
+	li.wissenschaft{padding: 0.5em 0em 0.5em 1em !important;}
+	li.bio{padding: 0.5em 0em 0.5em 1em !important;}
+	ul.buch>li a{font-size: 12px;}
 }
