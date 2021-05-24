@@ -282,4 +282,7 @@ div.flags{
 	ul.hidden>li{
 		font-size:12px;
 	}
+	ul.buch li{
+    cursor: pointer;
+	}
 }
