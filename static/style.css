@@ -60,6 +60,10 @@ div.sidebar{
 	height:100%;
 }
 
+div.blog-entry{
+	border-bottom: 1px solid black;
+}
+
 ul.nav{
 	list-style-type: none;
   padding-left: 5pt;
@@ -113,6 +117,13 @@ img.sidebar{
 
 img.cover{
 	width: 200px;
+}
+
+img.cover2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:100%;
 }
 
 ul.buch{
