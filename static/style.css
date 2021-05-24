@@ -139,7 +139,10 @@ li.wissenschaft{
 	background-image: url("tabs/BalkenWebsiteScience.png");
 	padding: 2.1em 0em 2.1em 1em !important;
 }
-li.krimi{background-image: url("tabs/BalkenWebsiteMystery.png");}
+li.krimi{
+	background-image: url("tabs/BalkenWebsiteMystery.png");
+	padding: 2.1em 0em 2.1em 1em !important;
+}
 li.kinder{background-image: url("tabs/BalkenWebsiteKids.png");}
 li.bio{
 	background-image: url("tabs/BalkenWebsiteBio.png");
@@ -181,9 +184,9 @@ div.footer{
 
 div.footer ul{
 	list-style-type: none;
-    padding-left: 0em;
-    padding-top: 0em;
-    overflow: hidden;
+  padding-left: 0em;
+  padding-top: 0em;
+  overflow: hidden;
 }
 
 div.footer ul li{
@@ -216,9 +219,10 @@ div.flags{
 	div.logo{
 		width: 150px;
 		height: 150px;
+		right:0;
 	}
 	div.header{
-		height:100px;
+		height:50px;
 		margin-right: 100px;
 	}
 	div.sidebar{
@@ -227,6 +231,13 @@ div.flags{
 	}
 	div.mainpanel{
 		margin-right: 100px;
+	}
+	div.flags{
+		margin-right:100px;
+	}
+	div.footer ul li{
+		float:unset;
+		text-align:unset;
 	}
 	ul.nav li{
 		float:unset;
@@ -244,6 +255,7 @@ div.flags{
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
 	}
+	li.krimi{padding: 0.5em 0em 0.5em 1em !important;}
 	li.klassiker{padding: 0.5em 0em 0.5em 1em !important;}
 	li.wissenschaft{padding: 0.5em 0em 0.5em 1em !important;}
 	li.bio{padding: 0.5em 0em 0.5em 1em !important;}
