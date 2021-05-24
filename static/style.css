@@ -245,6 +245,9 @@ div.flags{
 		padding: 1em 0em 1em 1em;
 		background-size:cover;
 	}
+	li.klassiker{
+		padding: 0.5em 0em 0.5em 1em !important;
+	}
 	li.wissenschaft{
 		padding: 0.5em 0em 0.5em 1em !important;
 	}
