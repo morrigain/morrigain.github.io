@@ -224,6 +224,16 @@ div.flags{
 	margin-right:275px;
 }
 
+div.subbanner{
+	display: block;
+	margin-top:4em;
+	padding-bottom:2em;
+	max-width:100%;
+	background-color:rgba(59,59,59,135);
+	color:#F0E0C4FF;
+	text-align:center;
+}
+
 /* Responsive design */
 
 @media screen and (max-width: 800px) {
