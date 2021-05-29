@@ -47,12 +47,9 @@
 			<div class="subflex">
 		<div class="main" style="background-image:none !important;">
 				<h3> Vorbestellung</h3>
-					<p>Download the <a href="../static/bestellschein.docx">Bestellungsform</a> and send it by email to <a href="mailto:vorbestellung@morrigain-verlag.de">vorbestellung@morrigain-verlag.de</a></p>
-					<hr style="border-top:2pt solid black;"/>
-					<p>Or fill in the form:</p>
 					<form id="form" onchange="mail(this)">
-						<input type="number" name="Anzahl_1" value="0" style="width:50px;"> <label for="Anzahl_1">book Zauberdämmerung + Lesezeichen: 19.99€</label><br/>
-						<input type="number" name="Anzahl_2" value="0" style="width:50px;"> <label for="Anzahl_2">box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€</label><br/>
+						<input type="number" name="Anzahl_1" value="0" style="width:50px;"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€   <em>(Aktion bis 30 Juni)</em></label><br/>
+						<input type="number" name="Anzahl_2" value="0" style="width:50px;"> <label for="Anzahl_2">box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
 						<hr/>
 						Lieferung an folgende Addresse:<br/><br/>
 						<label for="name">Name:</label><br/><input type="text" name="name" style="width:200px;"><br/>
@@ -63,8 +60,10 @@
 						Bitte beachten sie, dass bei Druckerzeugnissen die Lieferzeit 7 bis 14 Tage betragen kann.</p>
 						<hr/>
 						<input type="checkbox" id="agb" name="agb" onclick="enable_submit()"> <label for="agb">Ich habe die <a href="agb.html#agb">AGB</a>, <a href="agb.html#dsz">Datenschutzerklärung</a> und <a href="agb.html#wdr">Widerruferklärung</a> gelesen und stimme hermit zu.</label><br/><br/>
-						<a id="send"><button value="Send Email" id="submit">Send Email</button></a>
+						<a id="send">Send Email</a>
 					</form>
+					<hr style="border-top:2pt solid black;">
+					<p>Oder Sie können hier das <a href="../static/bestellschein.docx">Bestellungsformular</a> herunterladen und ausgefüllt an <a href="mailto:vorbestellung@morrigain-verlag.de">vorbestellung@morrigain-verlag.de</a> schicken.</p>
 		</div>
 			<div class="footer">
 				<div class="ul">
@@ -90,18 +89,18 @@
 
 	function initthis()
 	{
-	document.getElementById("submit").disabled=true;
+	document.getElementById("send").disabled=true;
 	}
 
 	function enable_submit()
 	{
 	if(document.getElementById("agb").checked == 1)
 	{
-	document.getElementById("submit").disabled=false;
+	document.getElementById("send").disabled=false;
 	}
 	else
 	{
-	document.getElementById("submit").disabled=true;
+	document.getElementById("send").disabled=true;
 	}
 	}
 
