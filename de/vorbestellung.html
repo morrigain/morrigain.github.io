@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+		<!--<link rel="stylesheet" type="text/css" href="../static/font.css">-->
+		<link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
+		<meta name="description" content="Mórrígain Verlag">
+		<meta charset="UTF-8">
+		<title>Mórrígain Verlag</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="../index.html">
+					<img class="logo" src="../static/MorrigainLogoFinalGrey.png" width="100%">
+				</a>
+			</div>
+		</div>
+		<div class="mainpanel">
+			<div class="navigation">
+				<ul class="nav">
+					<li><a href="../index.html">Buch</a>
+						<ul class="hidden_nav">
+							<li><a href="klassiker.html">Illustrierte Klassiker</a></li>
+							<li><a href="wissenschaft.html">Wissenschaft und Forschung</a></li>
+							<li><a href="biografien.html">Biografien und Literatur</a></li>
+							<li><a href="kinder.html">Kinderbücher</a></li>
+							<li><a href="krimi.html">Krimi und Mystery</a></li>
+						</ul>
+					</li>
+					<li><a href="neuankuendigen.html">Neuankündigungen</a></li>
+					<li><a href="news.html">Blog</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="ueber.html">Über uns</a></li>
+				</ul>
+			</div>
+			<div class="flex">
+			<div class="sidebar">
+				<img class="sidebar" src="../static/sidebar/Ramen_FinalesLogo_Morrigain _Rabenfoto2M.png">
+				<a href="https://www.instagram.com/p/CO-0K6qhBUx/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Zeuberd3.png"></a>
+				<a href="https://www.instagram.com/p/CO-0K6qhBUx/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Zeuberd4.png"></a>
+				<a href="https://www.instagram.com/p/CMuXgy8hHLw/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Lupin1.png"></a>
+				<a href="https://www.instagram.com/p/COU1AmtB3h0/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _MitWem.png"></a>
+			</div>
+			<div class="subflex">
+		<div class="main" style="background-image:none !important;">
+				<h3> Vorbestellung</h3>
+					<p>Download the <a href="../static/bestellschein.docx">Bestellungsform</a> and send it by email to <a href="mailto:vorbestellung@morrigain-verlag.de">vorbestellung@morrigain-verlag.de</a></p>
+					<hr style="border-top:2pt solid black;"/>
+					<p>Or fill in the form:</p>
+					<form id="form" onchange="mail(this)">
+						<input type="number" name="Anzahl_1" value="0" style="width:50px;"> <label for="Anzahl_1">book Zauberdämmerung + Lesezeichen: 19.99€</label><br/>
+						<input type="number" name="Anzahl_2" value="0" style="width:50px;"> <label for="Anzahl_2">box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€</label><br/>
+						<hr/>
+						Lieferung an folgende Addresse:<br/><br/>
+						<label for="name">Name:</label><br/><input type="text" name="name" style="width:200px;"><br/>
+						<label for="adresse1">Anschrift:</label><br/><textarea name="adresse1" style="width:200px;height:200px;"></textarea><br/><br/>
+						<label for="adresse2">Rechnungsaddresse falls Abweichend:</label><br/><textarea name="adresse2" style="width:200px;height:200px;"></textarea><br/><br/>
+						<hr/>
+						<p>Nach Eingang der Bestellung, schicken wir Ihnen in der Bestaertigungs Email die Rechnung mit Angabe der Bankverbindung. Die Ware wird ihnen nach Eingang der Zahllung und bei Aktionen nach deren Ablauf, innerhalb von 7 Tagen zugeschickt.<br/><br/>
+						Bitte beachten sie, dass bei Druckerzeugnissen die Lieferzeit 7 bis 14 Tage betragen kann.</p>
+						<hr/>
+						<input type="checkbox" id="agb" name="agb" onclick="enable_submit()"> <label for="agb">Ich habe die <a href="agb.html#agb">AGB</a>, <a href="agb.html#dsz">Datenschutzerklärung</a> und <a href="agb.html#wdr">Widerruferklärung</a> gelesen und stimme hermit zu.</label><br/><br/>
+						<a id="send"><button value="Send Email" id="submit">Send Email</button></a>
+					</form>
+		</div>
+			<div class="footer">
+				<div class="ul">
+				<ul>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="agb.html">AGB & Datenschutz</a></li>
+					<li><a href="presse.html">Presse</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
+				</ul>
+			</div>
+				<div class="flags">
+					<a href="../index.html"><img src="../static/flags/FlaggeD.jpeg" width="20"></a>
+					<img src="../static/flags/FlaggeEngland.png" width="20">
+					<a href="../fr/index.html"><img src="../static/flags/FlaggeFr.png" width="20"></a>
+					<img src="../static/flags/FlaggeSchweden.png" width="20">
+				</div>
+			</div>
+			</div>
+			</div>
+	</div>
+	</body>
+	<script type="text/javascript">
+
+	function initthis()
+	{
+	document.getElementById("submit").disabled=true;
+	}
+
+	function enable_submit()
+	{
+	if(document.getElementById("agb").checked == 1)
+	{
+	document.getElementById("submit").disabled=false;
+	}
+	else
+	{
+	document.getElementById("submit").disabled=true;
+	}
+	}
+
+	window.onload=initthis;
+	</script>
+
+<script>
+function mail(form) {
+    var name = form.name.value;
+    var anschrift = form.adresse1.value;
+		anschrift = anschrift.replace('\n','%0D%0A');
+    var rechnung = form.adresse2.value;
+		rechnung = rechnung.replace('\n','%0D%0A');
+    var anz1 = form.Anzahl_1.value;
+		var anz2 = form.Anzahl_2.value;
+		var agb = form.agb.value
+    var str = "mailto:vorbestellung@morrigain-verlag.de?subject=Vorbestellung&body=";
+		str += "Hiermit bestelle ich folgende Artikel:%0D%0A%0ABeschreibung%09Anzahl"
+		if (anz1 > 0){
+			str += "book Zauberdämmerung%0D%0A+ Lesezeichen %09" + anz1 + "%0D%0A"
+		}
+		if (anz2 > 0){
+			str += "box Zauberdämmerung%0D%0A+ limitierte Tasse%0D%0A+ 2 Lesezeichen %09" + anz2 + "%0D%0A%0A"
+		}
+    if (name.length > 0) {
+        str += "Lieferung an folgende Addresse:%0D%0AName:%0D%0A " + name + "%0D%0A%0A";
+    }
+    if (anschrift.length > 0) {
+        str += "Anschrift:%0D%0A " + anschrift + "%0D%0A%0A";
+    }
+    if (rechnung.length > 0) {
+        str += "Rechnungsaddresse falls Abweichend:%0D%0A " + rechnung + "%0D%0A%0A"
+    }
+    str += "%0D%0ARegards,%0D%0A" + name;
+    document.getElementById('send').href = str;
+}
+</script>
+
+</html>
