@@ -48,8 +48,9 @@
 		<div class="main" style="background-image:none !important;">
 				<h3> Vorbestellung</h3>
 					<form id="form" onchange="mail(this)">
-						<input type="number" name="Anzahl_1" value="0" style="width:50px;"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€   <em>(Aktion bis 30 Juni)</em></label><br/>
-						<input type="number" name="Anzahl_2" value="0" style="width:50px;"> <label for="Anzahl_2">box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
+						<input type="number" name="Anzahl_1" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€   <em>(Aktion bis 30 Juni)</em></label><br/>
+						<input type="number" name="Anzahl_2" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
+						<label>Gesamtpreis: <input type="text" readonly="true" name="gesamt" id="gesamt" value="0"></label>
 						<hr/>
 						Lieferung an folgende Addresse:<br/><br/>
 						<label for="name">Name:</label><br/><input type="text" name="name" style="width:200px;"><br/>
@@ -108,6 +109,16 @@
 	</script>
 
 <script>
+function calculatePrice(){
+		 var anz1 = parseInt(document.getElementsByName("Anzahl_1")[0].value);
+		 var anz2 = parseInt(document.getElementsByName("Anzahl_2")[0].value);
+		 var total = anz1 * 19.99 + anz2 * 33.33
+		 document.getElementById("gesamt").value = total.toFixed(2);
+
+}
+</script>
+
+<script>
 function mail(form) {
     var name = form.name.value;
     var anschrift = form.adresse1.value;
@@ -116,15 +127,20 @@ function mail(form) {
 		rechnung = rechnung.replace('\n','%0D%0A');
     var anz1 = form.Anzahl_1.value;
 		var anz2 = form.Anzahl_2.value;
+		var gesamt = form.gesamt.value;
 		var agb = form.agb.value
     var str = "mailto:vorbestellung@morrigain-verlag.de?subject=Vorbestellung&body=";
 		str += "Hiermit bestelle ich folgende Artikel:%0D%0A%0ABeschreibung%09%09%09Anzahl%0D%0A"
 		if (anz1 > 0){
-			str += "book Zauberdämmerung%0D%0A+ Lesezeichen %09%09%09" + anz1 + "%0D%0A"
+			str += "Beschreibung: buch Zauberdämmerung mit Lesezeichen%0D%0AAnzahl: " + anz1 + "%0D%0AEinselpreis: 19.99€%0D%0A%0A"
 		}
 		if (anz2 > 0){
-			str += "box Zauberdämmerung%0D%0A+ limitierte Tasse%0D%0A+ 2 Lesezeichen %09%09%09" + anz2 + "%0D%0A%0A"
+			str += "Beschreibung: box Zauberdämmerung mit limitierte Tasse und 2 Lesezeichen%0D%0AAnzahl: " + anz2 + "%0D%0AEinselpreis: 33.33€%0D%0A%0A"
 		}
+		str += "----------%0A%0AGesamtpreis: " + gesamt + "€%0D%0A%0A"
+		if (rechnung.length > 0) {
+        str += "Rechnungsaddresse falls Abweichend:%0D%0A " + rechnung + "%0D%0A%0A"
+    }
     if (name.length > 0) {
         str += "Lieferung an folgende Addresse:%0D%0AName:%0D%0A " + name + "%0D%0A%0A";
     }
