@@ -89,18 +89,18 @@
 
 	function initthis()
 	{
-	document.getElementById("send").disabled=true;
+	document.getElementById("send").style.display="none";
 	}
 
 	function enable_submit()
 	{
 	if(document.getElementById("agb").checked == 1)
 	{
-	document.getElementById("send").disabled=false;
+	document.getElementById("send").style.display="block";
 	}
 	else
 	{
-	document.getElementById("send").disabled=true;
+	document.getElementById("send").style.display="none";
 	}
 	}
 
@@ -118,12 +118,12 @@ function mail(form) {
 		var anz2 = form.Anzahl_2.value;
 		var agb = form.agb.value
     var str = "mailto:vorbestellung@morrigain-verlag.de?subject=Vorbestellung&body=";
-		str += "Hiermit bestelle ich folgende Artikel:%0D%0A%0ABeschreibung%09Anzahl"
+		str += "Hiermit bestelle ich folgende Artikel:%0D%0A%0ABeschreibung%09%09%09Anzahl%0D%0A"
 		if (anz1 > 0){
-			str += "book Zauberdämmerung%0D%0A+ Lesezeichen %09" + anz1 + "%0D%0A"
+			str += "book Zauberdämmerung%0D%0A+ Lesezeichen %09%09%09" + anz1 + "%0D%0A"
 		}
 		if (anz2 > 0){
-			str += "box Zauberdämmerung%0D%0A+ limitierte Tasse%0D%0A+ 2 Lesezeichen %09" + anz2 + "%0D%0A%0A"
+			str += "box Zauberdämmerung%0D%0A+ limitierte Tasse%0D%0A+ 2 Lesezeichen %09%09%09" + anz2 + "%0D%0A%0A"
 		}
     if (name.length > 0) {
         str += "Lieferung an folgende Addresse:%0D%0AName:%0D%0A " + name + "%0D%0A%0A";
