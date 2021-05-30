@@ -48,9 +48,10 @@
 		<div class="main" style="background-image:none !important;">
 				<h3> Vorbestellung</h3>
 					<form id="form" onchange="mail(this)">
-						<input type="number" name="Anzahl_1" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€   <em>(Aktion bis 30 Juni)</em></label><br/>
-						<input type="number" name="Anzahl_2" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">Box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
-						<label>Gesamtpreis: <input type="text" readonly="true" name="gesamt" id="gesamt" value="0"></label>
+						<input type="number" name="Anzahl_1" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€ * <em>(Aktion bis 30 Juni)</em></label><br/>
+						<input type="number" name="Anzahl_2" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">Box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ * <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
+						<label>Gesamtpreis:</label> <input type="text" readonly="true" name="gesamt" id="gesamt" value="0" style="text-align:right;width:100px;">€ *<br/>
+						<em style="font-size:75%;">(* MWSt und Versand inkl.)</em>
 						<hr/>
 						Lieferung an folgende Addresse:<br/><br/>
 						<label for="name">Name:</label><br/><input type="text" name="name" style="width:200px;"><br/>
@@ -59,6 +60,8 @@
 						<hr/>
 						<p>Nach Eingang der Bestellung, schicken wir Ihnen in der Bestaertigungs Email die Rechnung mit Angabe der Bankverbindung. Die Ware wird ihnen nach Eingang der Zahllung und bei Aktionen nach deren Ablauf, innerhalb von 7 Tagen zugeschickt.<br/><br/>
 						Bitte beachten sie, dass bei Druckerzeugnissen die Lieferzeit 7 bis 14 Tage betragen kann.</p>
+						<p>Versand durch Hermes (Inland). Es bestelt die Möglichkeit, die Buchsendung auch über Hermes als <b>versicherte Versand</b> zu erhalten. Dieses <b>muss bei der Bestellung angegeben werden</b>. Kosten werden vom Empfänger gefragen.<br/>
+						Versandkosten ins Ausland auf Anfrage.</p>
 						<hr/>
 						<input type="checkbox" id="agb" name="agb" onclick="enable_submit()"> <label for="agb">Ich habe die <a href="agb.html#agb">AGB</a>, <a href="agb.html#dsz">Datenschutzerklärung</a> und <a href="agb.html#wdr">Widerruferklärung</a> gelesen und stimme hermit zu.</label><br/><br/>
 						<a id="send">Send Email</a>
