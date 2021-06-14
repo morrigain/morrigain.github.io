@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
+		<!--<link rel="stylesheet" type="text/css" href="../static/font.css">-->
+		<link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
+		<meta name="description" content="Mórrígain Verlag">
+		<meta charset="UTF-8">
+		<title>Mórrígain Verlag</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo">
+				<a href="../index.html">
+					<img class="logo" src="../static/MorrigainLogoFinalGrey.png" width="100%">
+				</a>
+			</div>
+		</div>
+		<div class="mainpanel">
+			<div class="navigation">
+				<ul class="nav">
+					<li><a href="index.html">Livres</a>
+						<ul class="hidden_nav">
+							<li><a href="klassiker.html">Classiques illustrés</a></li>
+							<li><a href="wissenschaft.html">Science</a></li>
+							<li><a href="biografien.html">Biographies et Littérature</a></li>
+							<li><a href="kinder.html">Littérature jeunesse</a></li>
+							<li><a href="krimi.html">Romans policiers</a></li>
+						</ul>
+					</li>
+					<li><a href="neuankuendigen.html">Nouveautés</a></li>
+					<li><a href="news.html">Blog</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="ueber.html">À propos</a></li>
+				</ul>
+			</div>
+
+			<div class="flex">
+			<div class="sidebar">
+				<img class="sidebar" src="../static/sidebar/Ramen_FinalesLogo_Morrigain _Rabenfoto2M.png">
+				<a href="https://www.instagram.com/p/CO-0K6qhBUx/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Zeuberd3.png"></a>
+				<a href="https://www.instagram.com/p/CO-0K6qhBUx/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Zeuberd4.png"></a>
+				<a href="https://www.instagram.com/p/CMuXgy8hHLw/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _Lupin1.png"></a>
+				<a href="https://www.instagram.com/p/COU1AmtB3h0/"><img class="sidebar" src="../static/sidebar/Ramen_Logo_Morrigain _MitWem.png"></a>
+			</div>
+			<div class="subflex">
+		<div class="main" style="background-image:none !important;">
+				<h3> Précommandes</h3>
+					<form id="form" onchange="mail(this)">
+						<input type="number" name="Anzahl_3" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">Arsène Lupin - gentleman cambrioleur, Maurice Leblanc, vol.1 "L'Arrestation d'Arsène Lupin": 13.99€ * <em></em></label><br/>
+						<label>Total:</label> <input type="text" readonly="true" name="gesamt" id="gesamt" value="0" style="text-align:right;width:100px;">€ *<br/>
+						<em style="font-size:75%;">(* Taxes et livraisons incluses)</em>
+						<hr/>
+						Livraison à l'adresse suivante:<br/><br/>
+						<label for="name">Nom:</label><br/><input type="text" name="name" style="width:200px;"><br/>
+						<label for="adresse1">Adresse:</label><br/><textarea name="adresse1" style="width:200px;height:200px;"></textarea><br/><br/>
+						<label for="adresse2">Adresse de facturation, si différente:</label><br/><textarea name="adresse2" style="width:200px;height:200px;"></textarea><br/><br/>
+						<hr/>
+						<p>Après réception de la commande, nous vous enverrons la facture avec le détail des coordonnées bancaires dans l'email de confirmation. Les marchandises vous seront envoyées dans les 7 jours suivant la réception du paiement.
+Veuillez noter que le délai de livraison pour les produits imprimés peut être de 7 à 14 jours.<br/>
+Expédition par Hermes (en Allemagne). Vous avez la possibilité de recevoir l'envoi des livrse via Hermes en tant qu'<b>envoi assuré</b>. Ce <b>doit être précisé lors de la commande</b>. Les frais seront calculés à la demande.<br/>
+Frais de livraison hors Allemagne sur demande.</p>
+						<hr/>
+						<input type="checkbox" id="agb" name="agb" onclick="enable_submit()"> <label for="agb">J'ai lu et accepte les <a href="agb.html#agb">conditions d'utilisation</a>, <a href="agb.html#dsz">de protection des données</a> et les conditions <a href="agb.html#wdr">de révocation</a>.</label><br/><br/>
+						<a id="send">Envoyer l'email</a>
+					</form>
+					<hr style="border-top:2pt solid black;">
+					<p>Oder Sie können hier das <a href="../static/bestellschein.docx">Bestellungsformular</a> herunterladen und ausgefüllt an <a href="mailto:vorbestellung@morrigain-verlag.de">vorbestellung@morrigain-verlag.de</a> schicken.</p>
+		</div>
+			<div class="footer">
+				<div class="ul">
+				<ul>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="agb.html">AGB & Datenschutz</a></li>
+					<li><a href="presse.html">Presse</a></li>
+					<li><a href="impressum.html">Mentions Légales</a></li>
+				</ul>
+			</div>
+				<div class="flags">
+					<a href="../index.html"><img src="../static/flags/FlaggeD.jpeg" width="20"></a>
+					<img src="../static/flags/FlaggeEngland.png" width="20">
+					<a href="../fr/index.html"><img src="../static/flags/FlaggeFr.png" width="20"></a>
+					<img src="../static/flags/FlaggeSchweden.png" width="20">
+				</div>
+			</div>
+			</div>
+			</div>
+	</div>
+	</body>
+	<script type="text/javascript">
+
+	function initthis()
+	{
+	document.getElementById("send").style.display="none";
+	}
+
+	function enable_submit()
+	{
+	if(document.getElementById("agb").checked == 1)
+	{
+	document.getElementById("send").style.display="block";
+	}
+	else
+	{
+	document.getElementById("send").style.display="none";
+	}
+	}
+
+	window.onload=initthis;
+	</script>
+
+<script>
+function calculatePrice(){
+		 var anz3 = parseInt(document.getElementsByName("Anzahl_3")[0].value);
+		 var total = anz3 * 13.99
+		 document.getElementById("gesamt").value = total.toFixed(2);
+
+}
+</script>
+
+<script>
+function mail(form) {
+    var name = form.name.value;
+    var anschrift = form.adresse1.value;
+		anschrift = anschrift.replace(/\n/g,'%0D%0A');
+    var rechnung = form.adresse2.value;
+		rechnung = rechnung.replace(/\n/g,'%0D%0A');
+		var anz3 = form.Anzahl_3.value;
+		var gesamt = form.gesamt.value;
+		var agb = form.agb.value
+    var str = "mailto:vorbestellung@morrigain-verlag.de?subject=Precommande&body=";
+		str += "Par la présente je commande les articles suivants:%0D%0A%0A"
+		if (anz3 > 0){
+			str += "Description: Arsène Lupin - gentleman cambrioleur, Maurice Leblanc, vol.1%0D%0ANombre: " + anz3 + "%0D%0APrix unitaire: 13.99€%0D%0A%0A"
+		}
+		str += "----------%0A%0ATotal: " + gesamt + "€%0D%0A%0A"
+    if (name.length > 0) {
+        str += "Adresse de Livraison:%0D%0ANom:%0D%0A " + name + "%0D%0A%0A";
+    }
+    if (anschrift.length > 0) {
+        str += "Adresse:%0D%0A " + anschrift + "%0D%0A%0A";
+    }
+    if (rechnung.length > 0) {
+        str += "Adresse de facturation si différente:%0D%0A " + rechnung + "%0D%0A%0A"
+    }
+    str += "%0D%0ARegards,%0D%0A" + name;
+    document.getElementById('send').href = str;
+}
+</script>
+
+</html>

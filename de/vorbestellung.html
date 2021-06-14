@@ -50,6 +50,7 @@
 					<form id="form" onchange="mail(this)">
 						<input type="number" name="Anzahl_1" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_1">Buch Zauberdämmerung + Lesezeichen: 19.99€ * <em>(Aktion bis 30 Juni)</em></label><br/>
 						<input type="number" name="Anzahl_2" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">Box Zauberdämmerung + limitierte Tasse + 2 Lesezeichen: 33.33€ * <em>(Limitierte Auflage, bis 30 Juni)</em></label><br/>
+							<input type="number" name="Anzahl_3" min="0" value="0" style="width:50px;" onchange="calculatePrice()"> <label for="Anzahl_2">Arsène Lupin - gentleman cambrioleur, Maurice Leblanc, vol.1 "L'Arrestation d'Arsène Lupin": 13.99€ * <em></em></label><br/>
 						<label>Gesamtpreis:</label> <input type="text" readonly="true" name="gesamt" id="gesamt" value="0" style="text-align:right;width:100px;">€ *<br/>
 						<em style="font-size:75%;">(* MWSt und Versand inkl.)</em>
 						<hr/>
@@ -115,7 +116,8 @@
 function calculatePrice(){
 		 var anz1 = parseInt(document.getElementsByName("Anzahl_1")[0].value);
 		 var anz2 = parseInt(document.getElementsByName("Anzahl_2")[0].value);
-		 var total = anz1 * 19.99 + anz2 * 33.33
+		 var anz3 = parseInt(document.getElementsByName("Anzahl_3")[0].value);
+		 var total = anz1 * 19.99 + anz2 * 33.33 + anz3 * 13.99
 		 document.getElementById("gesamt").value = total.toFixed(2);
 
 }
@@ -130,6 +132,7 @@ function mail(form) {
 		rechnung = rechnung.replace(/\n/g,'%0D%0A');
     var anz1 = form.Anzahl_1.value;
 		var anz2 = form.Anzahl_2.value;
+		var anz3 = form.Anzahl_3.value;
 		var gesamt = form.gesamt.value;
 		var agb = form.agb.value
     var str = "mailto:vorbestellung@morrigain-verlag.de?subject=Vorbestellung&body=";
@@ -139,6 +142,9 @@ function mail(form) {
 		}
 		if (anz2 > 0){
 			str += "Beschreibung: Box Zauberdämmerung mit limitierter Tasse und 2 Lesezeichen%0D%0AAnzahl: " + anz2 + "%0D%0AEinzelpreis: 33.33€%0D%0A%0A"
+		}
+		if (anz3 > 0){
+			str += "Beschreibung: Arsène Lupin - gentleman cambrioleur, Maurice Leblanc, vol.1%0D%0AAnzahl: " + anz3 + "%0D%0AEinzelpreis: 19.99€%0D%0A%0A"
 		}
 		str += "----------%0A%0AGesamtpreis: " + gesamt + "€%0D%0A%0A"
     if (name.length > 0) {
