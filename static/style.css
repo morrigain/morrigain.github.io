@@ -27,12 +27,20 @@ div.logo{
 	height: 300px;
 	z-index: 2;
 }
+div.logo.mscience{
+	position: absolute;
+	right: 1em;
+	top: 0px;
+	width: 320px;
+	height: 320px;
+	z-index: 2;
+}
 
 div.navigation{
 	background-color: #000000FF;
 	/* border-top: 5px solid #BE0000FF; */
 	margin-left: 2em;
-	margin-right: -10em;
+	margin-right: -8em;
 }
 
 div.main{
@@ -251,6 +259,11 @@ div.subbanner{
 		width: 150px;
 		height: 150px;
 		right:0;
+	}
+	div.logo.mscience{
+		right: 0;
+		width: 150px;
+		height: 150px;
 	}
 	div.header{
 		height:50px;
