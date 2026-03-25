@@ -160,20 +160,26 @@ ul.buch li a{
 }
 
 li.klassiker{
-	background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker.png");
+	background-image: url("tabs/BalkenWebsiteIllustrierteKlassiker_col.png");
+	background-color: #2D692D !important;
 	padding: 2.1em 0em 2.1em 1em !important;
 }
 li.wissenschaft{
-	background-image: url("tabs/BalkenWebsiteScience.png");
+	background-image: url("tabs/BalkenWebsiteScience_col.png");
+	background-color: #313D6B  !important;
 	padding: 2.1em 0em 2.1em 1em !important;
 }
 li.krimi{
-	background-image: url("tabs/BalkenWebsiteMystery.png");
+	background-image: url("tabs/BalkenWebsiteMystery_col.png");
 	padding: 2.1em 0em 2.1em 1em !important;
 }
-li.kinder{background-image: url("tabs/BalkenWebsiteKids.png");}
+li.kinder{
+	background-image: url("tabs/BalkenWebsiteKids_col.png");
+	background-color: #68385C  !important;
+}
 li.bio{
-	background-image: url("tabs/BalkenWebsiteBio.png");
+	background-image: url("tabs/BalkenWebsiteBio_col.png");
+	background-color: #543868  !important;
 	padding: 2.1em 0em 2.1em 1em !important;
 }
 
